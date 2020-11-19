@@ -1,0 +1,37 @@
+{
+"version": "2.0.0",
+    "tasks": [
+		{
+			"label": "HelloWorld",
+			"type": "shell",
+			"command": "clang++",
+			"args": [
+			
+				
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-lglfw",
+				"-lglew",
+				"--include-directory=include/",
+				"--include-directory=build/",
+				"--include=include/glad.c",
+				"-framework",
+				"OpenGL",
+				"-framework",
+				"IOKit",
+				"-framework",
+				"Cocoa",
+				"src/main.cpp",
+				"-o",
+				"build/helloworld",
+				"--debug"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		}
+	]
+
+}
