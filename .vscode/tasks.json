@@ -2,18 +2,19 @@
 "version": "2.0.0",
     "tasks": [
 		{
-			"label": "HelloWorld",
+			"label": "mac",
 			"type": "shell",
 			"command": "clang++",
 			"args": [
-			
-				
 				"-std=c++17",
 				"-stdlib=libc++",
 				"-lglfw",
 				"-lglew",
 				"--include-directory=include/",
+				//"--include-directory=include/*.cpp",
 				"--include-directory=build/",
+				"--include-directory=src/",
+				//"--include=src/MyClassShader.hpp",
 				"--include=include/glad.c",
 				"-framework",
 				"OpenGL",
@@ -21,7 +22,7 @@
 				"IOKit",
 				"-framework",
 				"Cocoa",
-				"src/main.cpp",
+				"src/*.cpp",
 				"-o",
 				"build/helloworld",
 				"--debug"
