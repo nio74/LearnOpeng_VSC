@@ -4,7 +4,8 @@
 		{
 			"label": "mac",
 			"type": "shell",
-			"command": "clang++",
+			"command": "clang++ -g -Iinclude/ include/glad.c -lstdc++  -lglfw -lglew -framework OpenGL  src/*.cpp  -o main",
+			/*
 			"args": [
 				"-std=c++17",
 				"-stdlib=libc++",
@@ -26,7 +27,7 @@
 				"-o",
 				"build/helloworld",
 				"--debug"
-			],
+			],*/
 			"group": {
 				"kind": "build",
 				"isDefault": true

@@ -1,3 +1,6 @@
+#ifndef CLASSSHADER_H
+#define CLASSSHADER_H
+
 #include <iostream>
 class ClassShader
 {
@@ -7,5 +10,7 @@ public:
     ClassShader(std::string string);
     ~ClassShader();
 };
+
+#endif
 
 
