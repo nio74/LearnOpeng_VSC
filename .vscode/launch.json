@@ -7,7 +7,7 @@
             "preLaunchTask": "mac",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/helloworld",
+            "program": "${workspaceFolder}/build/main",
             "args": [],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
